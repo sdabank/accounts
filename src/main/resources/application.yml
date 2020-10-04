@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: accounts
+  profiles:
+    active: production
+  jpa:
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:32773/accounts?serverTimezone=Europe/Warsaw
+    username: root
+    password: root
